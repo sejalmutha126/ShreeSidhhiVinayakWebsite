@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Shree Sidhhi Vinayak Express - Premium courier and logistics services across India. Fast, reliable, and secure delivery solutions for all your shipping needs.">
+    <meta name="keywords" content="courier service, logistics, express delivery, cargo transport, India">
+    <title>Shree Sidhhi Vinayak Express - Premium Courier & Logistics Services</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/icon.jpg" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div>
+                    <img src="assets/logo.jpg" alt="Shree Sidhhi Vinayak Express" class="logo-img">
+                </div>
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-label="Toggle navigation" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fas fa-home me-1"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            <i class="fas fa-info-circle me-1"></i>About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Services.html">
+                            <i class="fas fa-box me-1"></i>Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="fas fa-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 text-center">
+                        <div class="hero-badge" data-aos="fade-down">
+                            <i class="fas fa-star"></i>
+                            <span>Trusted by 10,000+ Customers Nationwide</span>
+                        </div>
+                        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                            Fast & Reliable Express <br>
+                            <span class="gradient-text">Courier Services</span>
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Delivering excellence across India with speed, care, and professionalism
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#check-availability" class="btn btn-hero btn-primary">
+                                <i class="fas fa-search me-2"></i>Check Availability
+                            </a>
+                            <a href="#services" class="btn btn-hero btn-outline">
+                                <i class="fas fa-box me-2"></i>Our Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- City Availability Checker -->
+    <!-- <section id="check-availability" class="availability-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="availability-card" data-aos="zoom-in">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="card-title">Check Delivery Availability</h3>
+                        <p class="card-subtitle">Enter your city to see if we deliver to your area</p>
+
+                        <div class="search-wrapper">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="fas fa-map-pin"></i>
+                                </span>
+                                <input type="text" id="cityInput" class="form-control"
+                                    placeholder="Enter your city (e.g., Pune, Mumbai, Delhi...)" autocomplete="off">
+                                <button class="btn btn-search" onclick="checkCity()">
+                                    <i class="fas fa-search me-2"></i>Check Now
+                                </button>
+                            </div>
+                            <div class="result" id="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-boxes"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-count="50000">0</h3>
+                            <p class="stat-label">Deliveries Completed This Year</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-count="20">0+</h3>
+                            <p class="stat-label">Cities Covered</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number" data-count="98">0%</h3>
+                            <p class="stat-label">Customer Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <h3 class="stat-number">24/7</h3>
+                            <p class="stat-label">Support Available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge">Why Choose Us</span>
+                <h2 class="section-title">Experience The Difference</h2>
+                <p class="section-subtitle">Premium courier services designed to exceed your expectations</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">🚚</div>
+                        </div>
+                        <h5 class="feature-title">Fast Delivery</h5>
+                        <p class="feature-description">Express delivery within 24-48 hours to major cities</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">📍</div>
+                        </div>
+                        <h5 class="feature-title">Wide Coverage</h5>
+                        <p class="feature-description">Pan-India delivery network covering all major regions</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">📦</div>
+                        </div>
+                        <h5 class="feature-title">Safe Handling</h5>
+                        <p class="feature-description">Your packages handled with utmost care and security</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon">📞</div>
+                        </div>
+                        <h5 class="feature-title">24/7 Support</h5>
+                        <p class="feature-description">Round-the-clock customer support for your convenience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge">Our Services</span>
+                <h2 class="section-title">Comprehensive Logistics Solutions</h2>
+                <p class="section-subtitle">Tailored delivery services to meet all your shipping requirements</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card">
+                        <div class="service-icon">📦</div>
+                        <h5 class="service-title">Domestic Courier</h5>
+                        <p class="service-description">Fast and reliable domestic shipping across all major Indian
+                            cities with real-time tracking.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Door-to-door pickup</li>
+                            <li><i class="fas fa-check"></i> Same-day delivery available</li>
+                            <li><i class="fas fa-check"></i> Secure packaging</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">✈️</div>
+                        <h5 class="service-title">International Courier</h5>
+                        <p class="service-description">Global shipping solutions with customs clearance and
+                            international tracking capabilities.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Worldwide delivery</li>
+                            <li><i class="fas fa-check"></i> Customs assistance</li>
+                            <li><i class="fas fa-check"></i> Insurance available</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">⚡</div>
+                        <h5 class="service-title">Express Cargo</h5>
+                        <p class="service-description">Urgent delivery service for time-sensitive shipments with
+                            priority handling.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Express route optimization</li>
+                            <li><i class="fas fa-check"></i> Priority processing</li>
+                            <li><i class="fas fa-check"></i> Dedicated support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">🚛</div>
+                        <h5 class="service-title">Surface Transport</h5>
+                        <p class="service-description">Cost-effective surface transport for bulk shipments and heavy
+                            cargo across India.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Bulk discounts</li>
+                            <li><i class="fas fa-check"></i> Heavy cargo handling</li>
+                            <li><i class="fas fa-check"></i> Flexible scheduling</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">🚚</div>
+                        <h5 class="service-title">FTL / Part Load</h5>
+                        <p class="service-description">Full truck load and part load services for efficient and
+                            economical transportation.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Flexible capacity</li>
+                            <li><i class="fas fa-check"></i> Cost-effective rates</li>
+                            <li><i class="fas fa-check"></i> Direct delivery</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">📮</div>
+                        <h5 class="service-title">ST Bus Parcel Service</h5>
+                        <p class="service-description">Specialized parcel delivery service for secure and timely
+                            transportation of your valuable items.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Secure handling</li>
+                            <li><i class="fas fa-check"></i> Scheduled route dispatch</li>
+                            <li><i class="fas fa-check"></i> Fast intercity connectivity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <span class="section-badge">Visit Us</span>
+                <h2 class="section-title">Our Office Location</h2>
+                <p class="section-subtitle">Stop by our office or contact us for personalized service</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="location-card" data-aos="fade-up">
+                        <div class="row g-0">
+                            <div class="col-lg-5">
+                                <div class="location-info">
+                                    <h4 class="location-title">
+                                        <i class="fas fa-map-marker-alt me-2"></i>
+                                        Sidhhi Vinayak Express
+                                    </h4>
+                                    <div class="location-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-building"></i>
+                                            <div>
+                                                <strong>Address</strong>
+                                                <p>Pune, Maharashtra, India</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-phone"></i>
+                                            <div>
+                                                <strong>Phone</strong>
+                                                <p>+91 9028444169</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-envelope"></i>
+                                            <div>
+                                                <strong>Email</strong>
+                                                <p>info@siddhivinayak.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-clock"></i>
+                                            <div>
+                                                <strong>Business Hours</strong>
+                                                <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="https://maps.google.com" target="_blank" class="btn btn-directions">
+                                        <i class="fas fa-directions me-2"></i>Get Directions
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <div class="map-container">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.9736729138805!2d73.86233129065177!3d18.52009685294963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c067c95b8337%3A0xa57127345473fb68!2sShree%20Siddhivinayak%20Express%20Cargo!5e0!3m2!1sen!2sin!4v1769175211499!5m2!1sen!2sin"
+                                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="cta-content" data-aos="zoom-in">
+                        <div class="cta-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h2 class="cta-title">Ready to Ship with Us?</h2>
+                        <p class="cta-description">
+                            Get started today and experience hassle-free delivery with India's most trusted courier
+                            service
+                        </p>
+                        <div class="cta-buttons">
+                            <a href="contact.html" class="btn btn-cta-primary">
+                                <i class="fas fa-phone-alt me-2"></i>Contact Us Now
+                            </a>
+                            <a href="services.html" class="btn btn-cta-secondary">
+                                <i class="fas fa-box me-2"></i>View All Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 pb-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <div class="brand-logo mb-3">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Sidhhi Vinayak Express</h5>
+                        <p class="footer-description">Your trusted logistics partner for fast, secure, and reliable
+                            courier services across India.</p>
+                        <!-- <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="footer-title">Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Our Services</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Domestic Courier</a></li>
+                        <li><a href="#">International Shipping</a></li>
+                        <li><a href="#">Express Cargo</a></li>
+                        <li><a href="#">Track Shipment</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="footer-title">Contact Info</h6>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Pune, Maharashtra, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9028444169</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>madanmutha777@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="footer-copyright mb-0">
+                        © 2026 Sidhhi Vinayak Express. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="footer-credits mb-0">
+                        Made with <i class="fas fa-heart text-danger"></i> in India
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- City Checker Script -->
+    <!-- <script>
+        const cities = ["pune", "mumbai", "delhi", "bangalore", "hyderabad", "chennai", "kolkata", "ahmedabad"];
+
+        function checkCity() {
+            const cityInput = document.getElementById("cityInput");
+            const city = cityInput.value.trim().toLowerCase();
+            const result = document.getElementById("result");
+
+            if (!city) {
+                result.className = 'result show warning';
+                result.innerHTML = '<i class="fas fa-exclamation-triangle"></i> <span>Please enter a city name</span>';
+                return;
+            }
+
+            if (cities.includes(city)) {
+                result.className = 'result show success';
+                result.innerHTML = '<i class="fas fa-check-circle"></i> <span>Yes! We deliver to ' +
+                    city.charAt(0).toUpperCase() + city.slice(1) + '</span>';
+            } else {
+                result.className = 'result show error';
+                result.innerHTML = '<i class="fas fa-times-circle"></i> <span>Sorry, we don\'t currently serve ' +
+                    city.charAt(0).toUpperCase() + city.slice(1) + '. Contact us for special requests!</span>';
+            }
+        }
+
+        // Allow Enter key to trigger search
+        document.getElementById('cityInput').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                checkCity();
+            }
+        });
+
+        // Clear result when input is focused
+        document.getElementById('cityInput').addEventListener('focus', function () {
+            const result = document.getElementById('result');
+            result.classList.remove('show');
+        });
+
+        // Smooth scroll for hero buttons
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script> -->
+
+</body>
+
+</html>
